@@ -3,7 +3,6 @@ public class ConsoleApp {
     public static void main(String[] args) {
         String symbol = "*";
 
-        // проставляем значения по умолчанию
         int width = 10;
         int height = 5;
 
@@ -17,6 +16,8 @@ public class ConsoleApp {
                     width = Integer.parseInt(value);
                 } else if (key.equals("--height")) {
                     height = Integer.parseInt(value);
+                } else if (key.equals("--symbol")) {
+                    symbol = value;
                 }
             }
         }
